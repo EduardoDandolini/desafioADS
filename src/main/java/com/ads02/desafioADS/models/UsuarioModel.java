@@ -8,15 +8,10 @@ import org.springframework.data.relational.core.mapping.Table;
 @Table(name = "tb_usuario")
 public class UsuarioModel {
     @Id
-    @Column("id_usuario")
     private Long id;
-    @Column("nm_usuario")
     private String nome;
-    @Column("cpf")
     private String cpf;
-    @Column("login")
     private String login;
-    @Column("senha")
     private String senha;
 
     public UsuarioModel() {

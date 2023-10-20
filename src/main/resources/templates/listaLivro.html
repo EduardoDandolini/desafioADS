@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Titulo</th>
+    <th scope="col">Autor</th>
+    <th scope="col">Data de Publicação</th>
+    <th scope="col">Editora</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr data-th-each="livro: ${livros}">
+    <td data-th-text="${livro.titulo}"></td>
+    <td data-th-text="${livro.autor}"></td>
+    <td data-th-text="${livro.dataPublicacao}"></td>
+    <td data-th-text="${livro.editora}"></td>
+  </tr>
+  </tbody>
+</table> </body>
+</html>

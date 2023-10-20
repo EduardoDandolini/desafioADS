@@ -5,21 +5,15 @@ import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.util.Date;
+import java.sql.Date;
 
 @Table(name = "tb_livro")
 public class LivroModel {
     @Id
-    @Column("id_livro")
     private Long id;
-    @Column("titulo")
     private String titulo;
-    @Column("autor")
     private String autor;
-    @Column("dt_publicacao")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date dataPublicacao;
-    @Column("editora")
     private String editora;
 
     public LivroModel() {
